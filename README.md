@@ -26,3 +26,26 @@ Things **you cannot do** with Databricks Repos:
 - Monitoring
 - Reproducibility
 - Documentation
+
+## Databricks workflow
+- Define a series of activities to complete a Task (centered around data).
+- It supports scheduling. 
+- It supports logging and alerting
+- It supports parallel task execution.
+- It's NOT a Data Movement and Transformation Service (DMAT). It's not an ETL tool, it's an orchestration tool.
+- Similar to Apache Airflow, Crontab, SQL Server Agent, Windows Scheduler. 
+
+## Workflows use a DAG (Directed Acyclic Graph)
+- Vertices (Objects)
+- Edges (Relationships)
+- Objects and their relationships to other objects.
+- Directional (directed)
+- No Loops (Acyclic)
+
+## How can you pass variables or parameters into your task?
+
+## Schema on Read --> It makes easier to manipulate and work with files.
+- You can infer the data types based on the data you see in the file.
+- header "true" --> column names are in the first row of the CSV file.
+
+## Delta Tables
